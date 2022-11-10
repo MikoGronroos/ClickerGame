@@ -1,0 +1,16 @@
+{
+    "ShopItems":[
+        {
+            "Name": "Worker",
+            "Cost": 15,
+            "MoneyPerSecond": 1,
+            "MoneyPerTap": 0
+        },
+        {
+            "Name": "Worker",
+            "Cost": 15,
+            "MoneyPerSecond": 0,
+            "MoneyPerTap": 1
+        }
+    ]
+}

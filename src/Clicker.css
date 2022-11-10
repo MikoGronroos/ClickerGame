@@ -1,0 +1,25 @@
+#container {
+    height: 200px;
+    position: relative;
+    margin-top: 15%;
+  }
+  
+  #center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  #button{
+    background: url(pictures/FactoryButton.png);
+    width: 256px;
+    height: 256px;
+    border: 0px;
+  }
+  
+  #count{
+    margin-top: 40%;
+  }

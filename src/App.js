@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Shop from './Shop';
 import React, { useState } from 'react';
+import Clicker from './Clicker';
 
 function App() {
 
   const[count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Name of the game</h1>
-      <div id="container">
-        <div id="center">
-          <button onClick={() => setCount(count + 1)}>Centered Button</button>
-          <h1>{count}</h1>
-        </div>
-      </div>
+      <Clicker/>
+      <Shop/>
     </>
   );
-
-
 }
 
 export default App;
