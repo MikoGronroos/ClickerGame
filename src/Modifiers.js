@@ -1,4 +1,4 @@
-var moneyPerTap = 1;
+var moneyPerTap = 1.0;
 
 function getMoneyPerTap(){
     return moneyPerTap;

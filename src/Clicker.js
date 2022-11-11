@@ -1,19 +1,22 @@
 import './Clicker.css';
 import {getMoneyPerTap} from './Modifiers.js';
-import { useState } from 'react';
+import {setCurrencyAmount} from './Currency.js';
 
-function Clicker(props) {
 
-  const [count, setState] = useState(0);
+function Clicker() {
+
+  function buttonClick(){
+    setCurrencyAmount(getMoneyPerTap());
+  }
 
   return (
     <>
         <h1>Industrial Clicker</h1>
         <div id="container">
             <div id="center">
-            <button id='button' onClick={() => setState(count + getMoneyPerTap())}>
-                <h1 id='count'>{count}</h1>
-            </button>
+              <button id='button' onClick={() => buttonClick()}>
+                  <h1 id='count'>0</h1>
+              </button>
             </div>
         </div>
     </>

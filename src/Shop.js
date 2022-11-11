@@ -1,7 +1,8 @@
 import './Shop.css';
 import {addToMoneyPerTap} from './Modifiers.js';
+import {setCurrencyAmount, hasEnoughCurrency} from './Currency.js';
 
-function Shop(props) {
+function Shop() {
 
   const data = [{
     "Name": "Worker",
@@ -13,12 +14,16 @@ function Shop(props) {
     "Name": "Manager productivity",
     "Cost": 10,
     "MoneyPerSecond": 0,
-    "MoneyPerTap": 1
+    "MoneyPerTap": 0.01
   }];
 
   let itemList=data.map((singleData , index)=>{
     return <button className='ShopButton' onClick={() => {
-      addToMoneyPerTap(singleData.MoneyPerTap);
+
+      if(hasEnoughCurrency(singleData.Cost)){
+        setCurrencyAmount(-singleData.Cost);
+        addToMoneyPerTap(singleData.MoneyPerTap);
+      }
     }
       } key={index}>
       {singleData.Name}
