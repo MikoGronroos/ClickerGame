@@ -11,11 +11,10 @@ function Clicker() {
 
   return (
     <>
-        <h1>Industrial Clicker</h1>
         <div id="container">
             <div id="center">
               <button id='button' onClick={() => buttonClick()}>
-                  <h1 id='count'>0</h1>
+                  <h1 id='count'>0$</h1>
               </button>
             </div>
         </div>

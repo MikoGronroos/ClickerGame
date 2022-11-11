@@ -6,7 +6,7 @@ function getCurrency(){
 
 function setCurrencyAmount(amount){
     currencyAmount += amount;
-    document.getElementById('count').innerHTML = +getCurrency().toFixed(3);
+    document.getElementById('count').innerHTML = +getCurrency().toFixed(3)+"$";
 }
 
 function hasEnoughCurrency(amount){

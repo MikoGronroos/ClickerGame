@@ -6,6 +6,7 @@ function App() {
 
   return (
     <>
+      <h1>Industrial Clicker</h1>
       <Clicker/>
       <Shop/>
     </>
