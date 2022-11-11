@@ -1,15 +1,17 @@
 import './Clicker.css';
-import React, { useState } from 'react';
+import {getMoneyPerTap} from './Modifiers.js';
+import { useState } from 'react';
 
-function Clicker() {
-  const[count, setCount] = useState(0)
+function Clicker(props) {
+
+  const [count, setState] = useState(0);
+
   return (
     <>
         <h1>Industrial Clicker</h1>
         <div id="container">
             <div id="center">
-            <button id='button' onClick={() => setCount(count + 1)}>
-
+            <button id='button' onClick={() => setState(count + getMoneyPerTap())}>
                 <h1 id='count'>{count}</h1>
             </button>
             </div>
