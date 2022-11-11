@@ -14,7 +14,7 @@
   }
   
   #button{
-    background: url(pictures/FactoryButton.png);
+    background: url(../pictures/FactoryButton.png);
     width: 256px;
     height: 256px;
     border: 0px;

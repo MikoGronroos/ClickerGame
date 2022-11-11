@@ -1,5 +1,5 @@
-import './Clicker.css';
-import {getMoneyPerTap} from './Modifiers.js';
+import '../Stylesheets/Clicker.css';
+import {getMoneyPerTap} from '../Modifiers.js';
 import {setCurrencyAmount} from './Currency.js';
 
 

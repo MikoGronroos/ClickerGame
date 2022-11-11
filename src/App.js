@@ -1,6 +1,6 @@
-import './App.css';
-import Shop from './Shop';
-import Clicker from './Clicker';
+import './Stylesheets/App.css';
+import Shop from './Components/Shop.js';
+import Clicker from './Components/Clicker.js';
 
 function App() {
 

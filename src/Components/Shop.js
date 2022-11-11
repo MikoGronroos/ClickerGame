@@ -1,5 +1,5 @@
-import './Shop.css';
-import {addToMoneyPerTap} from './Modifiers.js';
+import '../Stylesheets/Shop.css';
+import {addToMoneyPerTap} from '../Modifiers.js';
 import {setCurrencyAmount, hasEnoughCurrency} from './Currency.js';
 
 function getItemPrice(base, percentageRaised){
