@@ -1,16 +1,7 @@
-import Cookies from "universal-cookie";
-import { getCurrency, setCurrencyAmount } from "./Currency";
-
-const cookies = new Cookies();
-
-function SaveCookies(){
-    let amount =  getCurrency();
-    cookies.set('money', amount);
+function SaveData(){
 }
 
-function LoadCookies(){
-    let moneyAmount = cookies.get('money');
-    setCurrencyAmount(Number(moneyAmount));
+function LoadData(){
 }
 
-export {SaveCookies, LoadCookies};
+export {SaveData, LoadData};
