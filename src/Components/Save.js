@@ -9,7 +9,6 @@ function SaveCookies(){
 }
 
 function LoadCookies(){
-
     let moneyAmount = cookies.get('money');
     setCurrencyAmount(Number(moneyAmount));
 }
