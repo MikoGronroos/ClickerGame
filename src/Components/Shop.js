@@ -1,6 +1,6 @@
 import '../Stylesheets/Shop.css';
 import {addToMoneyPerTap, addToMoneyPerSecond} from '../Modifiers.js';
-import {setCurrencyAmount, hasEnoughCurrency} from './Currency.js';
+import {addCurrency, hasEnoughCurrency} from './Currency.js';
 
 function getItemPrice(base, percentageRaised){
   return base * (1 + percentageRaised);
@@ -29,7 +29,7 @@ let itemList=data.map((singleData , index)=>{
   return <button className='ShopButton' onClick={() => {
 
     if(hasEnoughCurrency(getItemPrice(singleData.Cost, singleData.PercentageRaised))){
-      setCurrencyAmount(-getItemPrice(singleData.Cost, singleData.PercentageRaised));
+      addCurrency(-getItemPrice(singleData.Cost, singleData.PercentageRaised));
       addToMoneyPerTap(singleData.MoneyPerTap);
       addToMoneyPerSecond(singleData.MoneyPerSecond);
       singleData.PercentageRaised += singleData.PricePercentageIncrease;

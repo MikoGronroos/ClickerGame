@@ -1,5 +1,5 @@
 import {getMoneyPerSecond} from '../Modifiers.js'
-import {setCurrencyAmount} from './Currency.js';
+import {addCurrency} from './Currency.js';
 
 let secondsPassed = 0;
 let oldTimeStamp = 0;
@@ -11,7 +11,7 @@ function GameLoop(timeStamp){
     oldTimeStamp = timeStamp;
     timePassed += secondsPassed;
     if(timePassed >= 1){
-        setCurrencyAmount(getMoneyPerSecond());
+        addCurrency(getMoneyPerSecond());
         timePassed = 0;
     }
 

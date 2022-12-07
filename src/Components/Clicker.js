@@ -1,12 +1,12 @@
 import '../Stylesheets/Clicker.css';
 import {getMoneyPerTap} from '../Modifiers.js';
-import {setCurrencyAmount} from './Currency.js';
+import {addCurrency} from './Currency.js';
 
 
 function Clicker() {
 
   function buttonClick(){
-    setCurrencyAmount(getMoneyPerTap());
+    addCurrency(getMoneyPerTap());
   }
 
   return (
